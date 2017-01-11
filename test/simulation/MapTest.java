@@ -15,7 +15,7 @@ class MapTest {
 
     @Test
     public void testAuDemarrage() {
-
+    	
     }
 	
     @Test

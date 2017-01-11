@@ -2,7 +2,7 @@ package simulation;
 
 import java.util.*;
 
-class Map{
+public class Map{
 
     private static List<Predateur> ListLoup = new ArrayList<Predateur>();
     private static List<Proies> ListChevre = new ArrayList<Proies>();
@@ -35,36 +35,25 @@ class Map{
 
     }
 
-    private Nourriture[][] GenererPatch(int nombrePatch, float tauxCroissance){
-        if(checkPerfectSqrt(nombrePatch)){
-
-            int nbPatchPerLine = (int)Math.sqrt(nombrePatch);
-            float taillePatch=1/nombrePatch;
-
-            Nourriture[][] nourritureTab = new Nourriture[nbPatchPerLine][nbPatchPerLine];
+    protected static Nourriture[][] GenererPatch(int nombrePatch, float tauxCroissance){
 
 
-            for(int line=0; line<nbPatchPerLine; line++){
-                for(int colone=0; colone<nbPatchPerLine; colone++){
-                    Nourriture nourriture = new Nourriture(taillePatch, taillePatch*line, taillePatch*colone, tauxCroissance);
+            Nourriture[][] nourritureTab = new Nourriture[nombrePatch][nombrePatch];
+
+
+            for(int line=0; line<nombrePatch; line++){
+                for(int colone=0; colone<nombrePatch; colone++){
+                    Nourriture nourriture = new Nourriture(nombrePatch, nombrePatch*line, nombrePatch*colone, tauxCroissance);
                     nourritureTab[line][colone]=nourriture;
                 }
             }
             return nourritureTab;
-        }
-        else{
-            //OR thorw expetion
-            return null;
-        }
+
     }
 
-    public static boolean checkPerfectSqrt(int NombrePatch){
-        double sqrtTemp = Math.sqrt(NombrePatch);
-        double powTemp = Math.pow(sqrtTemp, sqrtTemp);
-        return powTemp == NombrePatch;
-    }
 
-    void Simuler(){
+
+    public void Simuler(){
         EnCourDeSimulation = true;
 
         ///Generate timer for update display

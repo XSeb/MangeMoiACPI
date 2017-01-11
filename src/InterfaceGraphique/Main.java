@@ -1,7 +1,9 @@
-package simulation;
+package InterfaceGraphique;
 
 import java.util.Timer;
 import java.util.TimerTask;
+
+import simulation.Map;
 
 
 
