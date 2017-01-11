@@ -6,7 +6,7 @@ import simulation.Map;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MapTest {
-	/*
+
 	@BeforeEach
 	public void setUp() throws Exception
 	{
@@ -26,7 +26,7 @@ class MapTest {
     @AfterEach
     public void tearDown() throws Exception {
     }
-    */
+
 }
 
 
