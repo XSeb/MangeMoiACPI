@@ -10,3 +10,5 @@ class MapTest {
         fail("test");
     }
 }
+
+//test à compléter
