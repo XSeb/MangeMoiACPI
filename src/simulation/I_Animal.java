@@ -1,4 +1,4 @@
-package simulation.simulation;
+package simulation;
 
 public interface I_Animal {
 	

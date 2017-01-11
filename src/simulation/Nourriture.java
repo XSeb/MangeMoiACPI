@@ -1,4 +1,4 @@
-package simulation.simulation;
+package simulation;
 
 import java.awt.geom.Point2D;
 
