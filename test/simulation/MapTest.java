@@ -11,4 +11,20 @@ class MapTest {
     }
 }
 
-//test à compléter
+/*
+@Before
+    public void setUp() throws Exception {
+        coffre = new Coffre();
+    }
+
+    @After
+    public void tearDown() throws Exception {
+    }
+
+    @Test
+    public void testAuDemarrage() {
+        assertEquals("CacheParBibliotheque",coffre.nomEtat());
+        assertFalse(coffre.chienEstLibere());
+        assertFalse(coffre.lapinEstLibere());
+    }
+ */
