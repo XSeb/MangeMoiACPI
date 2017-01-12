@@ -35,7 +35,7 @@ public class Main {
 
     public static void main (String[] args){
 
-        Map map = new Map(NombrePatch, NombreProie, NombrePredateur, DureeSimulation, PasTempsSimulation,
+        final Map map = new Map(NombrePatch, NombreProie, NombrePredateur, DureeSimulation, PasTempsSimulation,
         TauxReproducitonLoup, TauxdemortLoup, ConsoEnergieMoveLoup, ZoneInfluenceLoup, VitesseDeplacementLoup,
         TauxReproducitonChevre, TauxdemortChevre, ConsoEnergiMoveChevre, TauxTransfertMangerChevre, VitesseDeplacementChevre,
         TauxCroissance);
